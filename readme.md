@@ -8,7 +8,8 @@
 ### 3) Open command prompt and go the above folder.
 ### 4) Run `mvn clean verify`
 ### 5) Run `java -jar target/reposearch-1.0-SNAPSHOT.jar`
-### 6) Now open a browser or any other REST client and go to URL `http://localhost:8080/githubrepositories/search?language=<LANGUAGE_NAME>`
+### 6) Application starts on port 8080 and should give a console log like "Started GitHubRepositorySearchApplication..."
+### 7) Now open a browser or any other REST client and go to URL `http://localhost:8080/githubrepositories/search?language=<LANGUAGE_NAME>`
 
 ## Few Important bits
 ### 1) Due to limitation on max number of search results returned by GitHub API, for any language the max number of results returned in 1000
