@@ -3,8 +3,8 @@
 ### 2) The program requires Java8
 
 ## Steps to run the application
-### 1) Download test-piyush.zip onto a desired folder
-### 2) Unzip the above zip file
+### 1) Download test-piyush.zip
+### 2) Unzip the above zip file onto a desired folder
 ### 3) Open command prompt and go the root folder of the application.
 ### 4) Run `mvn clean verify`
 ### 5) Run `java -jar target/reposearch-1.0-SNAPSHOT.jar`
