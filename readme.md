@@ -1,6 +1,6 @@
 ##  Pre-requisites
-### In order to run the application maven needs to be installed on the system
-### The program requires Java8
+### 1) In order to run the application maven needs to be installed on the system
+### 2) The program requires Java8
 
 ## Steps to run the application
 ### 1) Download test-piyush.zip onto a desired folder
