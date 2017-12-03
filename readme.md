@@ -5,7 +5,7 @@
 ## Steps to run the application
 ### 1) Download test-piyush.zip
 ### 2) Unzip the above zip file onto a desired folder
-### 3) Open command prompt and go the root folder of the application.
+### 3) Open command prompt and go the above folder.
 ### 4) Run `mvn clean verify`
 ### 5) Run `java -jar target/reposearch-1.0-SNAPSHOT.jar`
 ### 6) Now open a browser or any other REST client and go to URL `http://localhost:8080/githubrepositories/search?language=<LANGUAGE_NAME>`
