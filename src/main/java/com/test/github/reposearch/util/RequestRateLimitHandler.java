@@ -8,13 +8,18 @@ public class RequestRateLimitHandler {
 
     public void handleRateLimitCondition(HttpClientErrorException ex) {
         long timeWhenRateLimitResets = Long.parseLong(ex.getResponseHeaders().get("X-RateLimit-Reset").get(0))*1000l;
-        long currentTimeMillis = System.currentTimeMillis();
+        long currentTimeMillis = getCurrentTimeInMillis();
         long timeToWaitTillReset = timeWhenRateLimitResets - currentTimeMillis;
-        sleepDueToRateLimit(timeToWaitTillReset);
+        if(timeToWaitTillReset>0) {
+            sleepDueToRateLimit(timeToWaitTillReset);
+        }
     }
 
+    protected long getCurrentTimeInMillis() {
+        return System.currentTimeMillis();
+    }
 
-    private void sleepDueToRateLimit(long time) {
+    protected void sleepDueToRateLimit(long time) {
         try {
             Thread.sleep(time);
         } catch (InterruptedException ex) {
