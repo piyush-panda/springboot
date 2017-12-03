@@ -1,8 +1,8 @@
-##Pre-requisites
+##  Pre-requisites
 ### In order to run the application maven needs to be installed on the system
 
 ## Steps to run the application
-### 1) Download symantec-test-piyush.zip onto a desired folder
+### 1) Download test-piyush.zip onto a desired folder
 ### 2) Unzip the above zip file
 ### 3) Open command prompt and go the root folder of the application.
 ### 4) Run `mvn clean verify`
