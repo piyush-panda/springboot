@@ -33,7 +33,7 @@ public class GitHubRepositoriesSearchServiceTest {
     private ApplicationConfig config;
 
     @InjectMocks
-    GitHubRepositoriesSearchService searchService;
+    private GitHubRepositoriesSearchService searchService;
 
     @Test
     public void searchRepositories_WhenRateLimitReached_SubsequentRequestShouldStillPass() throws Exception {
