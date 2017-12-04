@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-    Logger logger = Logger.getLogger(GlobalExceptionHandler.class.getName());
+    private Logger logger = Logger.getLogger(GlobalExceptionHandler.class.getName());
 
     @ExceptionHandler(HttpClientErrorException.class)
     public void handleException(HttpServletResponse response, HttpClientErrorException ex) throws Exception {
