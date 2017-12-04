@@ -3,7 +3,6 @@ package com.test.github.reposearch;
 
 import com.google.gson.Gson;
 import com.test.github.reposearch.entity.GitHubRepository;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
