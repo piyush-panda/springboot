@@ -74,6 +74,6 @@ public class GitHubRepositorySearchIT {
                 .andExpect(status().is(500))
                 .andReturn();
 
-        Assert.assertThat(result.getResponse().getErrorMessage(), is("Some unexpected error has occurred. Please try again"));
+        assertThat(result.getResponse().getErrorMessage(), is("Some unexpected error has occurred. Please try again"));
     }
 }
