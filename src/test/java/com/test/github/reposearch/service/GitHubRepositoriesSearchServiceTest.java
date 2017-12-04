@@ -26,11 +26,11 @@ import static org.mockito.Mockito.when;
 public class GitHubRepositoriesSearchServiceTest {
 
     @Mock
-    GitHubAPIRequestDispatcher<RepositorySearchResult> requestDispatcher;
+    private GitHubAPIRequestDispatcher<RepositorySearchResult> requestDispatcher;
     @Mock
-    RequestRateLimitHandler requestRateLimitHandler;
+    private RequestRateLimitHandler requestRateLimitHandler;
     @Mock(answer = Answers.RETURNS_SMART_NULLS)
-    ApplicationConfig config;
+    private ApplicationConfig config;
 
     @InjectMocks
     GitHubRepositoriesSearchService searchService;
