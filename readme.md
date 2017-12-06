@@ -1,17 +1,1 @@
-##  Pre-requisites
-### 1) In order to run the application maven needs to be installed on the system
-### 2) The program requires Java8
 
-## Steps to run the application
-### 1) Download test-piyush.zip
-### 2) Unzip the above zip file onto a desired folder
-### 3) Open command prompt and go the above folder.
-### 4) Run `mvn clean verify`
-### 5) Run `java -jar target/reposearch-1.0-SNAPSHOT.jar`
-### 6) Application starts on port 8080 and should give a console log like "Started GitHubRepositorySearchApplication..."
-### 7) Now open a browser or any other REST client and go to URL `http://localhost:8080/githubrepositories/search?language=<ENTER_LANGUAGE_NAME>`.
-###    For example: `http://localhost:8080/githubrepositories/search?language=rust`
-
-## Few Important bits
-### 1) Due to limitation on max number of search results returned by GitHub API, for any language the max number of results returned in 1000
-### 2) The GitHub API has a search rate limit of 10 requests per minute from an IP. So after first request the subsequent requests if done immediately would be a bit slower
